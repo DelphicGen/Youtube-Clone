@@ -1,0 +1,31 @@
+.sidebar {
+    flex: 0.2;
+}
+
+.sidebar > hr {
+    height: 1px;
+    border: 0;
+    background-color: #d3d3d3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        flex: 0.3;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sidebar {
+        background-color: #fff;
+        width: 100vw;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+    }
+
+    .sidebar > hr {
+        display: none;
+    }
+}

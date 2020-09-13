@@ -1,0 +1,30 @@
+.searchPage {
+    flex: .8;
+    padding: 40px 20px;
+    padding-bottom: 0;
+}
+
+.searchPage__filter {
+    display: flex;
+    align-items: center;
+    color: #808080;
+    font-size: small !important;
+}
+
+.searchPage__filter > h2 {
+    margin-left: 12px;
+}
+
+.searchPage > hr {
+    height: 1px;
+    border: 0;
+    background-color: #d3d3d3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .searchPage {
+        flex: 0.75;
+    }
+}

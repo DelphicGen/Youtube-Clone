@@ -1,0 +1,34 @@
+.channelRow {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 70%;
+}
+
+.channelRow__avatar {
+    width: 150px !important;
+    height: 150px !important;
+    margin-right: 20px;
+}
+
+.channelRow__text > h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.channelRow__text > p {
+    color: #606060;
+}
+
+@media screen and (max-width: 767px) {
+    .channelRow {
+        width: 100%;
+    }
+
+    .channelRow__avatar {
+        width: 100px !important;
+        height: 100px !important;
+    } 
+}

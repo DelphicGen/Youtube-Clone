@@ -1,0 +1,68 @@
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__logo {
+    height: 25px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.header__input {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 1px solid #d3d3d3;
+}
+
+.header__input > input {
+    flex-grow: 1;
+    border: none;
+    height: 26px;
+    padding-left: 8px;
+}
+
+.header__inputButton {
+    border: none;
+    width: 50px !important;
+    background-color: #fafafa;
+    border-left: 1px solid #d3d3d3;
+    color: #808080;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__iconRight {
+    border-radius: 50%;
+    margin-right: 12px;
+    transition: .25s ease-in-out;
+}
+
+@media screen and (max-width: 639px) {
+    .header__logo {
+        margin-left: 0;
+    }
+
+    .header__input {
+        width: auto;
+    }
+
+    .header__hamburgerIcon, .header__iconRight {
+        display: none !important;
+    }
+
+    .header__avatar {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
